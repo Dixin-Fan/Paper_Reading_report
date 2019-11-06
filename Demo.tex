@@ -1,0 +1,36 @@
+\documentclass[a4paper,12pt,onecolumn,songti]{article}
+
+\usepackage{xeCJK}
+\usepackage{indentfirst} % 中文段落首行缩进
+\addtolength{\topmargin}{-54pt}
+\setlength{\oddsidemargin}{-0.9cm}  % 3.17cm - 1 inch
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{17.00cm}
+\setlength{\textheight}{24.00cm}    % 24.62
+\renewcommand{\baselinestretch}{1} %定义行间距
+\parindent 22pt %重新定义缩进长度
+
+\begin{document} 
+	\section{文献基本信息}
+	作者： Sijie Yan, Yuanjun Xiong, Dahua Lin;文献题目：基于骨架的动作识别的时空图卷积网络;刊物：计算机视觉和模式识别;刊号：ISSN(1063-6919);时间：25.01.2018;格式引文：arXiv:1801.07455v2[cs.CV]
+	\section{文献讨论的问题及其主要观点}
+		\paragraph{写作目的}
+		传统的骨架的动作识别通过设计几个手工制作的特性来捕捉关节运动的动态，建模骨架通常依赖手工制作的零件或遍历规则。本论文解决这种方式导致表达能力有限和泛化困难问题。
+		\paragraph{研究方法}
+		采用一个新的动态骨架模型，称为时空图卷积网络(ST-GCN)，此模型第一个将图CNNs应用于基于骨架的交流识别的系统，该模型建立在一系列骨架图的顶部，其中每个节点对应于人体的一个关节。有两种类型的边缘，即空间边缘，形成自然连接的关节和时间边缘，连接相同的关节跨越连续的时间步。在此基础上构造了多个时空图卷积层，使得信息可以在时空维度上进行融合。
+		\paragraph{主要结论}
+		在两个具有挑战性的大型数据集上(Kinetics 和NTU-RGB+D)，ST-GCN优于先前的基于骨架的模型。此外，ST-GCN还可以捕获动态骨架序列中的运动信息，这与RGB模式是互补的。基于骨架的模型与基于框架的模型相结合，进一步提高了动作识别的性能。
+	\section{文献阅读后的分析}
+		\paragraph{文章的题目是否清晰、准确？}
+		\paragraph{文摘是否很好的提炼了⽂献的内容、容易理解？}
+		\paragraph{在introduction部分⽂章是否清晰地说明了写作本⽂的目的?}
+		\paragraph{⽂中的事实或分析是否存在错误？}
+		\paragraph{所有的讨论是否都与主题相关？}
+		\paragraph{有没有⼀些观点被夸⼤了或者没有得到⾜够重视？提出⼀些修改的建议。}
+		\paragraph{有哪些段落应该扩展、缩写、或者去掉吗？}
+		\paragraph{作者的论述清晰吗？找出表述含混不清的地⽅。举例说说应该怎么修改。}
+		\paragraph{作者默认为真的假设有什么？合理吗？}
+		\paragraph{作者的讨论是否客观？客观性对于这个题目⽽言重要吗？}
+\end{document} 
+
+	
