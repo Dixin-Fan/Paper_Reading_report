@@ -1,5 +1,6 @@
 # paper-reviews
 This project was built to manage my reviews which are primarily related to human pose estimation papers from multi-view video.
+![](preview.png)
 
 ## Table of Contents
 - [Built With](#built-with)
