@@ -1,0 +1,442 @@
+\documentclass[a4paper]{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\geometry{left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\usepackage{graphicx}
+\usepackage{setspace}
+\setlength{\baselineskip}{20pt}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage[subfigure]{tocloft}
+% \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\begin{document}
+    \begin{titlepage}
+        \renewcommand{\baselinestretch}{2}
+        \begin{center}
+            \parbox[b]{7cm}{
+            \includegraphics[scale=1]{nxu-logo.png}
+            }
+            \vskip 1.5cm
+            \hwli \fontsize{42}{44.9} 毕\quad 业\quad 设\quad 计
+            \vskip 1cm
+            \heiti \zihao{-1} (2020届)
+            \vskip 1cm
+            \heiti \zihao{-1} 
+                题目：
+                \underline{\quad 基于骨架的动作识别系统\quad}
+            \vskip 2cm
+            \songti \zihao{-2}
+            学\qquad 院：\underline{\quad 信息工程学院\quad}\\
+            专\qquad 业：\underline{\qquad 软件工程\qquad}\\
+            年\qquad 级：\underline{\qquad 2016级\quad \qquad}\\
+            学生学号：\underline{\quad 12016241916\qquad}\\
+            学生姓名：\underline{\qquad 范帝鑫\qquad \quad}\\
+            指导老师：\underline{\qquad \quad 张鹏\quad \qquad}
+            \vskip 1.5cm
+            2020年01月16日
+        \end{center}
+        
+    \end{titlepage}
+    
+    \begin{titlepage}
+        \centerline{\heiti \zihao{-3} 摘要}
+        ~\\
+        
+        \renewcommand{\baselinestretch}{1.5}
+        \songti \zihao{4}
+        \setlength{\parindent}{2em}
+        我钦佩的不少经济学家，如林毅夫，卢峰、李玲、平新乔、赵耀辉、胡大源、温铁军、张军、李维森、路风等，能从实践中发现经济理论的问题，给我许多启发；姚洋引入演化博弈论，贾根良引入演化经济学，重振德国历史学派，史正富和孟捷用创新经济学研究新马克思经济学，开拓了新的思路。
+        \\\\
+        \heiti \zihao{4}关键字
+        \songti \zihao{4}：我是关键字1；我是关键字2
+    \end{titlepage}
+   
+    \begin{titlepage}
+        \setmainfont{Times New Roman}
+        \centerline{\zihao{-3} \textbf{Abstract}}
+        ~\\
+        
+        \renewcommand{\baselinestretch}{1.5}
+        \zihao{4}
+        \setlength{\parindent}{2em}
+        Many economists I admire, such as Lin Yifu, Lu Feng, Li Ling, Ping Xinqiao, Zhao Yaohui, Hu Dayuan, Wen Tiejun, Zhang Jun, Li Weisen, Lu Feng, etc., can find problems in economic theory from practice and give me Many inspirations; Yao Yang introduced evolutionary game theory, Jia Genliang introduced evolutionary economics, revitalized the German historical school, Shi Zhengfu and Meng Jie used innovative economics to study new Marx economics and opened up new ideas.
+        \\\\
+        \zihao{4}\textbf{Key words:}
+        \songti \zihao{4}apple; pen
+    \end{titlepage}
+    
+    \begin{titlepage}
+        \renewcommand{\contentsname}{
+            \centerline{\heiti \zihao{3}目\quad 录\\ \vskip}
+        }
+        \heiti \zihao{-4}
+        \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+        \renewcommand{\baselinestretch}{1.5}
+        \newpage
+        \pagestyle{empty}
+        \tocloftpagestyle{empty}
+        \tableofcontents
+        \thispagestyle{empty}
+    \end{titlepage}
+    
+    \newpage
+    \pagestyle{fancy}
+    \setcounter{page}{1}
+    
+    \addcontentsline{toc}{section}{1绪论}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}1绪论}}
+        
+        \addcontentsline{toc}{subsection}{1.1课题背景及意义}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}1.1课题背景及意义}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{1.2国内外研究综述}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}1.2国内外研究综述}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{1.2.1国外研究综述}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 1.2.1国外研究综述}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{1.2.2国内研究综述}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 1.2.1国内研究综述}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{1.3主要研究内容}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}1.3主要研究内容}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{1.4论文的组织结构}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}1.4论文的组织结构}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{1.5本章小结}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}1.5本章小结}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+    
+    \addcontentsline{toc}{section}{2相关理论和技术}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}2相关理论和技术}}
+        
+        \addcontentsline{toc}{subsection}{2.1安卓系统}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}2.1安卓系统}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{2.1.1安卓简介}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 2.1.1安卓简介}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{2.1.2安卓特性}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 2.1.2安卓特性}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+         \addcontentsline{toc}{subsubsection}{2.1.3安卓基本框架}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 2.1.3安卓基本框架}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{2.1.4安卓系统的四大组件}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 2.1.4安卓系统的四大组件}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{2.2家洼网页技术}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}2.2家洼网页技术}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{2.2.1小服务程序}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 2.2.1小服务程序}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{2.2.2汤姆猫和小服务程序之间的关系}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 2.2.2汤姆猫和小服务程序之间的关系}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{2.3本章小结}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}2.3本章小结}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+    \addcontentsline{toc}{section}{3系统需求与概要设计}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}3系统需求与概要设计}}
+        
+        \addcontentsline{toc}{subsection}{3.1需求分析}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}3.1需求分析}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{3.2软件的可行性分析}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}3.2软件的可行性分析}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{3.2.1经济上的可行性}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 3.2.1经济上的可行性}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{3.2.2技术上的可行性}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 3.2.2技术上的可行性}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{3.2.3操作上的可行性}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 3.2.3操作上的可行性}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{3.3系统设计}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}3.3系统设计}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{3.3.1总体设计}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 3.3.1总体设计}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{3.3.2服务器提供接口}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 3.3.2服务器提供接口}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{3.4本章小结}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}3.4本章小结}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+    
+    \addcontentsline{toc}{section}{4系统实现与测试}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}4系统实现与测试}}
+    
+        \addcontentsline{toc}{subsection}{4.1系统实现}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.1系统实现}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        马未都（1955年3月22日－），收藏家、古董鉴赏家，为中国民主建国会会员，观复博物馆创办人及现任馆长。马未都出生于北京，祖籍山东荣成。1981年，在《中国青年报》发表了小说《今夜月儿圆》，被许多读者视为传统文化的启蒙读物。小说发表后，被调为《青年文学》的编辑。1996年，马未都创办中华人民共和国第一家私立博物馆——观复博物馆。
+        
+        \addcontentsline{toc}{subsubsection}{4.1.1软件平台}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.1.1软件平台}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        马未都（1955年3月22日－），收藏家、古董鉴赏家，为中国民主建国会会员，观复博物馆创办人及现任馆长。马未都出生于北京，祖籍山东荣成。1981年，在《中国青年报》发表了小说《今夜月儿圆》，被许多读者视为传统文化的启蒙读物。小说发表后，被调为《青年文学》的编辑。1996年，马未都创办中华人民共和国第一家私立博物馆——观复博物馆。
+        
+        \addcontentsline{toc}{subsubsection}{4.1.2数据库选择}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.1.2数据库选择}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        马未都（1955年3月22日－），收藏家、古董鉴赏家，为中国民主建国会会员，观复博物馆创办人及现任馆长。马未都出生于北京，祖籍山东荣成。1981年，在《中国青年报》发表了小说《今夜月儿圆》，被许多读者视为传统文化的启蒙读物。小说发表后，被调为《青年文学》的编辑。1996年，马未都创办中华人民共和国第一家私立博物馆——观复博物馆。
+        
+        \addcontentsline{toc}{subsection}{4.2云计算}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.2云计算}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{4.2.1云计算简介}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.2.1云计算简介}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.2.2云应用搭建}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.2.2云应用搭建}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{4.3什么及}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.3什么及}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{4.3.1什么简介}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.3.1什么简介}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.3.2数据库设计与实现}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.3.2数据库设计与实现}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{4.4\ Volley}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.4\ Volley}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{4.4.1\ Volley简介}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.4.1\ Volley简介}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.4.2网络框架的实现}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.4.2网络框架的实现}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{4.5\ universal image loader}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.5\ universal image loader}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{4.5.1\ universal image loader 简介}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.5.1\ universal image loader 简介}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.5.2\ APP中图片加载的实现}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.5.2\ APP中图片加载的实现}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{4.6\ Jsoup}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.6\ Jsoup}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{4.6.1\ Jsoup简介}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.6.1\ Jsoup简介}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.6.2\ Jsoup实现}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.6.2\ Jsoup实现}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{4.7系统测试}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.7系统测试}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+        
+        \addcontentsline{toc}{subsubsection}{4.7.1版本更新信息}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.7.1版本更新信息}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.7.2接口测试报告}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.7.2接口测试报告}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.7.3目标系统性能需求}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.7.3目标系统性能需求}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsubsection}{4.7.4测试结论}
+        \renewcommand{\baselinestretch}{1.5}
+        \subsubsection*{\heiti \zihao{-4}\quad 4.7.4测试结论}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        
+        \addcontentsline{toc}{subsection}{4.8系统功能界面}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.8系统功能界面}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        马未都（1955年3月22日－），收藏家、古董鉴赏家，为中国民主建国会会员，观复博物馆创办人及现任馆长。马未都出生于北京，祖籍山东荣成。1981年，在《中国青年报》发表了小说《今夜月儿圆》，被许多读者视为传统文化的启蒙读物。小说发表后，被调为《青年文学》的编辑。1996年，马未都创办中华人民共和国第一家私立博物馆——观复博物馆。
+        
+        \addcontentsline{toc}{subsection}{4.9本章小结}
+        \renewcommand{\baselinestretch}{2}
+        \subsection*{\heiti \zihao{4}4.9本章小结}
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt} 
+    
+    \addcontentsline{toc}{section}{5总结与展望}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}5总结与展望}}
+        
+        \songto \zihao{-4}
+        \setlength{\baselineskip}{20pt}
+        马未都（1955年3月22日－），收藏家、古董鉴赏家，为中国民主建国会会员，观复博物馆创办人及现任馆长。马未都出生于北京，祖籍山东荣成。1981年，在《中国青年报》发表了小说《今夜月儿圆》，被许多读者视为传统文化的启蒙读物。小说发表后，被调为《青年文学》的编辑。1996年，马未都创办中华人民共和国第一家私立博物馆——观复博物馆。
+    
+    \addcontentsline{toc}{section}{参考文献}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}参考文献}}
+    
+    \renewcommand{\baselinestretch}{1}
+    \zihao{5}
+    \setmainfont{Times New Roman}
+    \bibitem{cao17}
+      [1]Rongmei Cao.
+      Matrix Theory.
+      Nanjing University of Aeronautics and Astronautics, 2017.
+    \bibitem{pbrs14}
+      [2]Perozzi, Bryan, R. Al-Rfou, and S. Skiena. "DeepWalk: online learning of social." (2014):701-710.
+    \songti 
+    \bibitem{czw17}
+      [3]李彦冬, 郝宗波, and 雷航. "卷积神经网络研究综述." 计算机应用 36.9(2016):2508-2515.
+      
+    \newpage
+    \addcontentsline{toc}{section}{谢辞}
+    \renewcommand{\baselinestretch}{2}
+    \centerline{\section*{\heiti \zihao{3}谢辞}}
+    
+    \renewcommand{\baselinestretch}{1}
+    \songti \zihao{-4}
+    马未都（1955年3月22日－），收藏家、古董鉴赏家，为中国民主建国会会员，观复博物馆创办人及现任馆长。马未都出生于北京，祖籍山东荣成。1981年，在《中国青年报》发表了小说《今夜月儿圆》，被许多读者视为传统文化的启蒙读物。小说发表后，被调为《青年文学》的编辑。1996年，马未都创办中华人民共和国第一家私立博物馆——观复博物馆。
+    
+\end{document}
